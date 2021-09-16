@@ -1,0 +1,116 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Hind' rel='stylesheet'>
+    <title>Sarmaaya Charts</title>
+
+</head>
+
+<body>
+    <div class="container m-5  ">
+        <div class="row ">
+            <div class="col-lg-4 col-md-6 col-sm-12 border rounded m-1 bg-white ">
+                <h6 class="mb-5 mt-3">Equity to Asset Ratio <a href=""
+                        title=" It measures the amount of equity the business has when compared to the total assets owned by the business"><i
+                            class="fas fa-info-circle fa-sm ml-2"></i></a></h6>
+                <canvas id="equityToAsset"></canvas>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <p> 1 year</p>
+                        </div>
+                        <div class="col-4">
+                            <p> 3 years</p>
+                        </div>
+                        <div class="col-4">
+                            <p>5 years</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 border rounded  m-1 bg-white">
+                <h6 class="mb-5 mt-3">Cash Payout Ratio <a href=""
+                        title="It shows the proportion of earnings a company pays its shareholders in the form of dividends"><i
+                            class="fas fa-info-circle fa-sm ml-2"></i></a></h6>
+
+                <canvas id="cashToPayout"></canvas>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <p> 1 year</p>
+                        </div>
+                        <div class="col-4">
+                            <p> 3 years</p>
+                        </div>
+                        <div class="col-4">
+                            <p>5 years</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 border rounded  m-1 bg-white">
+                <h6 class="mb-5 mt-3">Price to Sale Ratio <a href=""
+                        title="It shows how much investors are willing to pay per dollar of sales for a stock"><i
+                            class="fas fa-info-circle fa-sm ml-2"></i></a></h6>
+                <canvas id="priceToSale"></canvas>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <p> 1 year</p>
+                        </div>
+                        <div class="col-4">
+                            <p> 3 years</p>
+                        </div>
+                        <div class="col-4">
+                            <p>5 years</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 border rounded  m-1 bg-white">
+                <h6 class="mb-5 mt-3">Current Ratio <a href=""
+                        title="Current ratio is a comparison of current assets to current liabilities"><i
+                            class="fas fa-info-circle fa-sm ml-2"></i></a></h6>
+                <canvas id="currentRatio"></canvas>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <p> 1 year</p>
+                        </div>
+                        <div class="col-4">
+                            <p> 3 years</p>
+                        </div>
+                        <div class="col-4">
+                            <p>5 years</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.0.0/chartjs-plugin-datalabels.min.js"
+        integrity="sha512-R/QOHLpV1Ggq22vfDAWYOaMd5RopHrJNMxi8/lJu8Oihwi4Ho4BRFeiMiCefn9rasajKjnx9/fTQ/xkWnkDACg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="./index.js">
+    </script>
+
+</body>
+
+</html>
